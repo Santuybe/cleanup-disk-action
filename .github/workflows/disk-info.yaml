@@ -1,9 +1,12 @@
 name: disk info
 
 on:
-  schedule:
-    - cron: '0 0 * * 0'
-  # push:
+ # schedule:
+   # - cron: '0 0 * * 0'
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # Tambahkan ini agar bisa dijalankan manual
 
 jobs:
   disk_info:
